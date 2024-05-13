@@ -4232,6 +4232,7 @@ label {
 .card-why-travel .card-image img {
   display: inline-block;
   vertical-align: middle;
+  height: 70px;
 }
 .card-why-travel .card-info .card-title {
   display: block;
