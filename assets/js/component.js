@@ -185,7 +185,7 @@ class Header extends HTMLElement {
                     <div class="box-contactus">
                         <h6 class="title-contactus neutral-1000">Contact Us</h6>
                         <div class="contact-info">
-                            <p class="address-2 text-md-medium neutral-1000">Lorem ipsum dolor sit amet</p>
+                            <p class="address-2 text-md-medium neutral-1000">Delhi, India</p>
                             <p class="hour-work-2 text-md-medium neutral-1000">Hours: 8:00 - 17:00, Mon - Sat</p>
                             <p class="email-2 text-md-medium neutral-1000">travipedia2024@gmail.com</p>
                         </div>
@@ -196,8 +196,6 @@ class Header extends HTMLElement {
         `
   }
 }
-
-//Footer
 
 class Footer extends HTMLElement {
   connectedCallback() {
