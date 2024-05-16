@@ -812,13 +812,13 @@
     });
 
     /*------ Timer Countdown ----*/
-    $("[data-countdown]").each(function () {
+    /*$("[data-countdown]").each(function () {
         var $this = $(this),
             finalDate = $(this).data("countdown");
         $this.countdown(finalDate, function (event) {
             $(this).html(event.strftime("" + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%D</span><span class="countdown-period lh-14 font-xs"> days </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%H</span><span class="countdown-period font-xs lh-14"> hours </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%M</span><span class="countdown-period font-xs lh-14"> mins </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%S</span><span class="countdown-period font-xs lh-14"> secs </span></span>'));
         });
-    });
+    });*/
     var _container_left = $(".container").offset().left + 15;
     $(".block-testimonials").css("padding-left", _container_left + "px");
 
@@ -838,13 +838,13 @@
         $(this).addClass("active");
     })
 
-    $(".calendar-date").each(function(){
+    /*$(".calendar-date").each(function(){
         $(this).datepicker({
             format: "dd/mm/yyyy",
             autoclose: true,
             orientation: 'bottom'
         });
-    });
+    });*/
 
     $(".close-popup").on("click", function(e){
         $(".popup-firstload").hide();

@@ -6,7 +6,7 @@ class Header extends HTMLElement {
                 <div class="container-fluid">
                     <div class="text-header">
                         <div class="text-unlock text-sm-bold">Unlock the Magic of Travel with TraviPedia - Your Gateway to Extraordinary Experiences</div>
-                        <a class="link-secondary-2" href="#">
+                        <a class="link-secondary-2" href="/contact">
                             Contact us Now 
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
                                 <path d="M7.99992 12.6666L12.6666 7.99992L7.99992 3.33325M12.6666 7.99992L3.33325 7.99992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -23,8 +23,9 @@ class Header extends HTMLElement {
                             <div class="header-nav">
                                 <nav class="nav-main-menu">
                                     <ul class="main-menu">
+                                        <li><a href='/'>Home</a></li>
                                         <li class="mega-li has-children">
-                                            <a class='active' href='/'>Home</a>
+                                            <a class='active' href='#'>Services</a>
                                             <div class="mega-menu">
                                                 <div class="mega-menu-inner">
                                                     <div class="row align-items-center">
@@ -51,9 +52,9 @@ class Header extends HTMLElement {
                                                                         <a class='card-icon' href='/'> <img src="assets/imgs/template/icons/activity.svg" alt="TraviPedia"></a>
                                                                         <div class="card-info">
                                                                             <a href='/'>
-                                                                                <h6 class="text-md-bold">Customized Itinearies</h6>
+                                                                                <h6 class="text-md-bold">Customized Itineary Packages</h6>
                                                                             </a>
-                                                                            <p class="text-xs-medium neutral-500">Customise your Itinearies in a few minutes </p>
+                                                                            <p class="text-xs-medium neutral-500">Customise your Itineary Package in a few minutes </p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="card-home-link background-body">
@@ -99,7 +100,7 @@ class Header extends HTMLElement {
                         </div>
                         <div class="header-right">
                             <div class="d-flex align-middle mr-15"><a class="btn btn-mode change-mode mr-15" href="#" data-bs-theme-value="dark"> <img class="light-mode" src="assets/imgs/template/icons/light.svg" alt="TraviPedia"><img class="dark-mode" src="assets/imgs/template/icons/light-w.svg" alt="TraviPedia"></a><!-- <a class="btn btn-default btn-signin" href="#">Signin</a></div> -->
-                            <div class="burger-icon-2 burger-icon-white"><img src="assets/imgs/template/icons/menu.svg" alt="TraviPedia"></div>
+                            <!--<div class="burger-icon-2 burger-icon-white"><img src="assets/imgs/template/icons/menu.svg" alt="TraviPedia"></div>-->
                             <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
                         </div>
                     </div>
@@ -128,7 +129,7 @@ class Header extends HTMLElement {
                 </div>
             </div>
         </div>
-        <div class="sidebar-canvas-wrapper perfect-scrollbar button-bg-2">
+        <!-- <div class="sidebar-canvas-wrapper perfect-scrollbar button-bg-2">
             <div class="sidebar-canvas-container">
                 <div class="sidebar-canvas-head">
                     <div class="sidebar-canvas-logo"> <a class='d-flex' href='/'><img class="light-mode" alt="TraviPedia" src="assets/imgs/logo.svg" style="height: 60px;"><img class="dark-mode" alt="TraviPedia" src="assets/imgs/logo.svg" style="height: 60px;"></a></div>
@@ -155,9 +156,9 @@ class Header extends HTMLElement {
                                         <a class='card-icon' href='/'> <img src="assets/imgs/template/icons/activity.svg" alt="TraviPedia"></a>
                                         <div class="card-info">
                                             <a href='/'>
-                                                <h6 class="text-md-bold">Customized Itinearies</h6>
+                                                <h6 class="text-md-bold">Customized Itineary Packages</h6>
                                             </a>
-                                            <p class="text-xs-medium neutral-500">Customise your Itinearies in a few minutes </p>
+                                            <p class="text-xs-medium neutral-500">Customise your Itineary Package in a few minutes </p>
                                         </div>
                                     </div>
                                     <div class="card-home-link background-body">
@@ -192,7 +193,7 @@ class Header extends HTMLElement {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         `
   }
 }
@@ -213,14 +214,19 @@ class Footer extends HTMLElement {
                                 <p class="text-md text-white icon-email">travipedia2024@gmail.com</p>
                             </div>
                         </div>
+                        <h5 class="text-white ml-40 mb-20">Coming Soon...</h5>
+                        <div class="d-flex align-items-center">
+                            <img alt="TraviPedia" src="assets/imgs/appstore.png" style="height: 40px;">
+                            <img alt="TraviPedia" class="ml-10" src="assets/imgs/playstore.png" style="height: 40px;">
+                        </div>
                     </div>
                     <div class="col-md-3 col-xs-6 footer-2">
                         <h6 class="text-linear-3">Quick Links</h6>
                         <ul class="menu-footer">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Faq's</a></li>
-                            <li><a href="#">How it Works</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="/about-us">About Us</a></li>
+                            <li><a href="/faq">Faq's</a></li>
+                            <li><a href="/how-it-works">How it Works</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
                             <li><a href="#">Why us</a></li>
                             <li><a href="#">Testimonails</a></li>
                         </ul>
@@ -233,7 +239,6 @@ class Footer extends HTMLElement {
                             <li><a href="#">Instagram</a></li>
                             <li><a href="#">Twitter</a></li>
                             <li><a href="#">Threads</a></li>
-                            <li><a href="#">Telegram</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-xs-6 footer-4">
@@ -249,11 +254,11 @@ class Footer extends HTMLElement {
                 <div class="footer-bottom mt-50">
                     <div class="row align-items-center">
                         <div class="col-md-6 text-md-start text-center mb-20">
-                            <p class="text-sm color-white">Copyright © 2024 TraviPedia Inc. All rights reserved.</p>
+                            <p class="text-sm color-white">Copyright © 2024 <a href="/">TraviPedia</a> | Powered by <a href="https://www.hiqbyte.com/" target="_blank">Hiqbyte</a></p>
                         </div>
                         <div class="col-md-6 text-md-end text-center mb-20">
                             <div class="d-flex align-items-center justify-content-end">
-                                <p class="text-lg-bold neutral-0 d-inline-block mr-10">Follow us</p>
+                                <p class="text-lg-bold text-white d-inline-block mr-10">Follow us</p>
                                 <div class="box-socials-footer d-inline-block">
                                     <a class="icon-socials icon-instagram" href="#">
                                         <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -273,6 +278,11 @@ class Footer extends HTMLElement {
                                     <a class="icon-socials icon-be" href="#">
                                         <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M8.82393 10.736L13.9225 7.78881L8.82393 4.84165V10.736ZM20.1803 3.04389C20.308 3.50561 20.3964 4.12451 20.4554 4.91042C20.5242 5.69633 20.5536 6.37418 20.5536 6.96361L20.6126 7.78881C20.6126 9.94024 20.4554 11.5219 20.1803 12.5337C19.9347 13.4179 19.3649 13.9877 18.4808 14.2333C18.0191 14.361 17.1742 14.4494 15.8775 14.5083C14.6004 14.5771 13.4313 14.6066 12.3507 14.6066L10.7887 14.6655C6.67251 14.6655 4.10848 14.5083 3.09662 14.2333C2.21247 13.9877 1.64269 13.4179 1.39709 12.5337C1.26938 12.072 1.18097 11.4531 1.12203 10.6672C1.05326 9.8813 1.02379 9.20345 1.02379 8.61402L0.964844 7.78881C0.964844 5.63739 1.12203 4.05575 1.39709 3.04389C1.64269 2.15974 2.21247 1.58996 3.09662 1.34436C3.55834 1.21665 4.4032 1.12823 5.69995 1.06929C6.97705 1.00052 8.14609 0.971052 9.22671 0.971052L10.7887 0.912109C14.9049 0.912109 17.4689 1.06929 18.4808 1.34436C19.3649 1.58996 19.9347 2.15974 20.1803 3.04389Z" fill=""></path>
+                                        </svg>
+                                    </a>
+                                    <a class="icon-socials icon-be" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12.1835 1.41016L12.1822 1.41016C9.09012 1.43158 6.70036 2.47326 5.09369 4.51569C3.66581 6.33087 2.93472 8.86436 2.91016 12.0068V12.0082C2.93472 15.1508 3.66586 17.6696 5.09369 19.4847C6.70043 21.5271 9.10257 22.5688 12.1946 22.5902H12.1958C14.944 22.5711 16.8929 21.8504 18.4985 20.2463C20.6034 18.1434 20.5408 15.5048 19.8456 13.8832C19.3163 12.6493 18.2709 11.6618 16.8701 11.0477C16.6891 8.06345 15.0097 6.32178 12.2496 6.30415C10.6191 6.29409 9.14792 7.02378 8.24685 8.39104L9.90238 9.5267C10.4353 8.71818 11.2789 8.32815 12.2371 8.33701C13.6244 8.34586 14.5362 9.11128 14.7921 10.4541C14.02 10.3333 13.1902 10.2982 12.3076 10.3488C9.66843 10.5008 7.9399 12.061 8.05516 14.2244C8.17571 16.4862 10.367 17.7186 12.4476 17.605C14.9399 17.4684 16.4209 15.6292 16.7722 13.2836C17.3493 13.6575 17.7751 14.1344 18.0163 14.6969C18.4559 15.7222 18.4838 17.4132 17.1006 18.7952C15.8838 20.0108 14.4211 20.5407 12.1891 20.5572C9.71428 20.5388 7.85698 19.746 6.65154 18.2136C5.51973 16.7748 4.92843 14.6882 4.90627 12.0002C4.92843 9.31211 5.51973 7.22549 6.65154 5.78673C7.85698 4.25433 9.71424 3.46156 12.189 3.44303C14.6819 3.4617 16.5728 4.25837 17.8254 5.79937C18.5162 6.64934 18.949 7.66539 19.2379 8.71407L21.1776 8.19656C20.8148 6.85917 20.2414 5.58371 19.363 4.50305C17.7098 2.46918 15.2816 1.43166 12.1835 1.41016ZM12.4204 12.3782C13.3044 12.3272 14.1239 12.3834 14.8521 12.5345C14.7114 14.1116 14.0589 15.4806 12.3401 15.575C11.2282 15.6376 10.1031 15.1413 10.0484 14.114C10.0077 13.3503 10.5726 12.4847 12.4204 12.3782Z"></path>
                                         </svg>
                                     </a>
                                 </div>
