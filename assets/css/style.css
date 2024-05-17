@@ -1,4 +1,5 @@
 @import url(https://fonts.bunny.net/css?family=manrope:400,500,700,800|merienda-one:400);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(../css/vendors/bootstrap.min.css);
 @import url(../css/vendors/uicons-regular-rounded.css);
 @import url(../css/plugins/swiper-bundle.min.css);
@@ -3643,7 +3644,7 @@ label {
   z-index: 12;
 }
 .card-flight .card-image .wish svg {
-  stroke: var(--bs-neutral-1000);
+  margin-top: -3px;
 }
 .card-flight .card-image .wish:hover svg {
   stroke: var(--bs-warning);
@@ -9458,7 +9459,6 @@ a.icon-socials:hover svg {
 
 .accordion-button {
   border-bottom: 0px;
-  padding: 48px 90px 48px 48px;
   padding-left: 0px;
   border: 0px;
   border-bottom: 1p solid var(--bs-border-color);
@@ -9540,7 +9540,7 @@ a.icon-socials:hover svg {
   border-radius: 4px;
   width: 42px;
   height: 42px;
-  top: 48px;
+  top: 25px;
   right: 48px;
   position: absolute;
   z-index: 12;
@@ -11912,7 +11912,7 @@ h1 span {
 
 .box-content-main-detail {
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .box-banner-room {
@@ -11943,12 +11943,10 @@ h1 span {
 .box-room-features {
   background-color: var(--bs-background-body);
   border-radius: 16px;
-  padding: 35px 13px 15px 13px;
+  padding: 15px 0px;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.09);
 }
 
 .item-room-feature {
@@ -11958,7 +11956,7 @@ h1 span {
   margin: 0px 10px 20px 10px;
   border: 1px solid var(--bs-border-color);
   width: 100%;
-  max-width: 12.28%;
+  max-width: 18%;
 }
 .item-room-feature:hover {
   box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.09);
@@ -12656,7 +12654,6 @@ a.link-black:hover svg {
   font-size: 14px;
   line-height: 22px;
   color: var(--bs-neutral-800);
-  margin-bottom: 20px;
 }
 .group-collapse-expand .card.card-body ul {
   list-style: disc;
@@ -12786,6 +12783,7 @@ a.link-black:hover svg {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 10px;
   margin-bottom: 25px;
   border-bottom: 1px solid var(--bs-border-color);
@@ -15564,5 +15562,156 @@ h2 span {
     -webkit-transform: translateX(300px);
             transform: translateX(300px);
     opacity: 0;
+  }
+}
+
+.share-buttons {
+  bottom: 0;
+  right: -4%;
+  position: fixed;
+  transition: 0.5s ease all;
+  width: 0;
+  z-index: 200;
+}
+.share-buttons .share-button-main {
+  bottom: 10.5%;
+  cursor: pointer;
+  right: 1.5%;
+  position: fixed;
+  z-index: 200;
+}
+.open {
+  right: 5% !important;
+  transition: 0.5s ease all;
+  bottom: 20%;
+}
+.ctn-icon-social-media:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transition: 0.3s ease all;
+  width: 100%;
+  z-index: 1;
+}
+.ctn-icon-social-media {
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0);
+  box-sizing: content-box;
+  font-size: 1.7em;
+  height: 2em;
+  line-height: 2em;
+  overflow: hidden;
+  position: relative;
+  width: 2em;
+  z-index: 2;
+  margin-top: 20px;
+}
+.ctn-icon-social-media a i,
+.icon-go-to-up-footer {
+  position: relative;
+  transition: 0.3s ease all;
+  z-index: 3;
+}
+.ctn-icon-social-media:hover > a i,
+.ctn-icon-social-media:focus > a i,
+.ctn-icon-social-media:active > a i,
+.ctn-icon-social-media:hover > i,
+.ctn-icon-social-media:focus > i {
+  transform: rotateY(360deg);
+}
+.ctn-icon-social-media:hover:before,
+.ctn-icon-social-media:focus:before,
+.ctn-icon-social-media:active:before {
+  background-color: #ffffff;
+  top: 0;
+}
+.bgcolor-facebook:hover > a i,
+.bgcolor-facebook:focus > a i,
+.bgcolor-facebook:active > a i {
+  color: #3b5998;
+}
+.bgcolor-rss:hover > a i,
+.bgcolor-rss:focus > a i,
+.bgcolor-rss:active > a i {
+  color: #ff4500;
+}
+.bgcolor-twitter:hover > a i,
+.bgcolor-twitter:focus > a i,
+.bgcolor-twitter:active > a i {
+  color: #55acee;
+}
+.bgcolor-whatsapp:hover > a i,
+.bgcolor-whatsapp:focus > a i,
+.bgcolor-whatsapp:active > a i {
+  color: #25d366;
+}
+.bgcolor-github:hover > i,
+.bgcolor-github:focus > i,
+.bgcolor-github:active > i {
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+.bgcolor-github:active > .icon-go-to-up-footer {
+  transform: translateY(-5px);
+  transition: 0.3s ease all;
+}
+.txt-center {
+  text-align: center;
+}
+.white {
+  color: #fff;
+}
+.bgcolor-facebook {
+  background-color: #3b5998;
+}
+.bgcolor-github {
+  background-color: #07a5e1;
+}
+.bgcolor-google-plus {
+  background-color: #dd4b39;
+}
+.bgcolor-linkedin {
+  background-color: #007bb5;
+}
+.bgcolor-pinterest {
+  background-color: #cb2027;
+}
+.bgcolor-rss {
+  background-color: #ff4500;
+}
+.bgcolor-skype {
+  background-color: #00aff0;
+}
+.bgcolor-snapchat {
+  background-color: #fffc00;
+}
+.bgcolor-spotify {
+  background-color: #00e461;
+}
+.bgcolor-tumblr {
+  background-color: #32506d;
+}
+.bgcolor-twitter {
+  background-color: #55acee;
+}
+.bgcolor-whatsapp {
+  background-color: #25d366;
+}
+.bgcolor-youtube {
+  background-color: #ff0000;
+}
+.bgcolor-white {
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .mega-menu-option {
+    width: auto !important;
+    margin-left: 0rem;
+  }
+  .open {
+    right: 18% !important;
   }
 }

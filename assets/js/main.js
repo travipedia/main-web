@@ -768,6 +768,16 @@
         switchBilledType2(1);
     }
 
+    $(document).ready(function () {
+        $(".share-button-main").on("click", function () {
+          $(".share-buttons").toggleClass("open");
+        });
+      });
+
+    $('a.default-void').click(function(e) {
+        e.preventDefault();
+    });
+
     $(window).resize(function () {
             var _pd_left = $(".padding-left-auto");
             var _pd_right = $(".padding-right-auto");
